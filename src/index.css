@@ -8,40 +8,40 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 25% 10%;
-    --foreground: 180 100% 98%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 20% 15%;
-    --card-foreground: 180 100% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 20% 15%;
-    --popover-foreground: 180 100% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 180 100% 50%;
-    --primary-foreground: 220 25% 10%;
+    --primary: 142 76% 56%;
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: 200 90% 45%;
-    --secondary-foreground: 180 100% 98%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 15% 25%;
-    --muted-foreground: 180 20% 70%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 170 100% 45%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 142 76% 56%;
+    --accent-foreground: 0 0% 5%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 180 100% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 180 100% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 142 76% 56%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220 25% 10%), hsl(200 90% 20%));
-    --gradient-accent: linear-gradient(135deg, hsl(200 90% 45%), hsl(180 100% 50%));
-    --gradient-subtle: linear-gradient(180deg, hsl(220 25% 10%), hsl(220 30% 15%));
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 10%));
+    --gradient-accent: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 56%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 5%), hsl(0 0% 8%));
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,8 +70,6 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(135deg, hsl(220 25% 10%), hsl(200 90% 20%), hsl(220 25% 10%));
-    background-attachment: fixed;
     min-height: 100vh;
   }
   

@@ -8,18 +8,19 @@ export const Thesis = () => {
         
         <div className="space-y-8 text-lg md:text-xl text-muted-foreground leading-relaxed">
           <p className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            The technology landscape is evolving at an unprecedented pace. Traditional approaches to software development, 
-            infrastructure management, and data processing are reaching their limits.
+            Solo founders face the loneliest job in business. Building in isolation leads to burnout, procrastination, 
+            and stalled progress. Traditional accountability systems aren't built for the unique challenges of entrepreneurship.
           </p>
           
           <p className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            nexgroov is redesigning the foundations of modern technology from the ground up. We're building systems that 
-            are not just faster and more efficient, but fundamentally more intelligent, adaptable, and secure.
+            nexgroov transforms the founder journey through gamified accountability. By organizing builders into squads, 
+            each member commits to one focused task daily—all connected to a unified mission. Progress becomes visible, 
+            measurable, and celebrated.
           </p>
           
           <p className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            Our approach combines cutting-edge research with practical, enterprise-ready solutions that scale seamlessly 
-            from prototype to production.
+            With dedicated coaches facilitating each squad, founders gain structure, support, and momentum. 
+            We're not just building products—we're building a new generation of world builders.
           </p>
         </div>
       </div>

@@ -1,23 +1,23 @@
-import { Code2, Shield, Zap } from "lucide-react";
+import { Users, Target, Trophy } from "lucide-react";
 
 const features = [
   {
     number: "01",
-    title: "Advanced Architecture",
-    description: "Built on next-generation principles that prioritize scalability, performance, and maintainability. Our architecture enables seamless integration and deployment across any infrastructure.",
-    icon: Code2,
+    title: "Squad-Based Building",
+    description: "Join focused squads of fellow founders working toward aligned goals. Each member commits to one meaningful task per day, creating a rhythm of consistent progress and mutual accountability.",
+    icon: Users,
   },
   {
     number: "02",
-    title: "Enterprise Security",
-    description: "Security isn't an afterthought—it's fundamental to our design. Every component is built with enterprise-grade security protocols and continuous monitoring capabilities.",
-    icon: Shield,
+    title: "Daily Focused Tasks",
+    description: "No overwhelming to-do lists. One task. One day. All connected to your larger mission. Our system helps you identify what truly moves the needle and execute with clarity.",
+    icon: Target,
   },
   {
     number: "03",
-    title: "Lightning Performance",
-    description: "Optimized from the ground up for maximum performance. Our solutions deliver exceptional speed and efficiency, even under the most demanding workloads.",
-    icon: Zap,
+    title: "Gamified Progress",
+    description: "Track streaks, earn achievements, and celebrate wins with your squad. Our gamification system transforms accountability from a chore into an engaging journey of continuous growth.",
+    icon: Trophy,
   },
 ];
 

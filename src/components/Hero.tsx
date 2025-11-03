@@ -12,13 +12,13 @@ export const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-light tracking-wider">
-            <span className="block letter-spacing-wide">Building</span>
-            <span className="block letter-spacing-wide gradient-text mt-2">Next-Generation</span>
-            <span className="block letter-spacing-wide mt-2">Solutions</span>
+            <span className="block letter-spacing-wide">Building the</span>
+            <span className="block letter-spacing-wide text-primary mt-2">Next Generation</span>
+            <span className="block letter-spacing-wide mt-2">of World Builders</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
-            nexgroov is revolutionizing technology with innovative, scalable solutions for the modern enterprise.
+            Nexgroov is revolutionizing accountability by gamifying life for builders.
           </p>
           
           <div className="flex gap-4 pt-4">
