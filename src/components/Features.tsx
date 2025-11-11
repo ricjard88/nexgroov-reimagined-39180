@@ -10,7 +10,7 @@ const features = [
   {
     number: "02",
     title: "Proactive Intervention",
-    description: "Like a credit monitoring service, we alert you when your score drops. Our advisors reach out with real-world support and adjustments to your workload—you don't need to ask for help.",
+    description: "We alert you when your score drops. Our advisors reach out with real-world support and adjustments to your workload. You don't need to ask for help.",
     icon: Shield,
   },
   {

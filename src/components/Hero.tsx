@@ -18,7 +18,7 @@ export const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
-            We identify burnout before it happens. Track your team's health with a credit score for burnout—and get support before you need to ask.
+            We identify burnout before it happens. Track your health in real-time and get support before you need to ask.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">

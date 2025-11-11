@@ -37,7 +37,7 @@ export const BurnoutScoreExplainer = () => {
         
         <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-20 leading-relaxed">
           Your Burnout Score is calculated from multiple data points collected through your daily interactions with nexgroov. 
-          When your score indicates risk, we don't just notify you—we intervene with personalized support to help you recover before burnout sets in.
+          When your score indicates risk, we don't just notify you. We intervene with personalized support to help you recover before burnout sets in.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -77,7 +77,7 @@ export const BurnoutScoreExplainer = () => {
               <h3 className="text-2xl font-light mb-3">Real-Time Monitoring</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Your score updates continuously as you check in, complete tasks, and engage with your squad. 
-                We track patterns over time to identify early warning signs—like a sudden drop of 15+ points or staying below 65 for three consecutive days. 
+                We track patterns over time to identify early warning signs like a sudden drop of 15+ points or staying below 65 for three consecutive days. 
                 When we detect risk, our advisors reach out proactively with real-world interventions.
               </p>
             </div>
