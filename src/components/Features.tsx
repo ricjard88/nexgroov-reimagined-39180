@@ -1,23 +1,29 @@
-import { Users, Target, Trophy } from "lucide-react";
+import { Activity, Shield, Users, BarChart3 } from "lucide-react";
 
 const features = [
   {
     number: "01",
-    title: "Squad-Based Building",
-    description: "Join focused squads of fellow founders working toward aligned goals. Each member commits to one meaningful task per day, creating a rhythm of consistent progress and mutual accountability.",
-    icon: Users,
+    title: "Burnout Health Monitoring",
+    description: "Track your burnout score in real-time through daily check-ins, task completion patterns, and engagement levels. We identify when you're approaching your threshold before you feel it.",
+    icon: Activity,
   },
   {
     number: "02",
-    title: "Daily Focused Tasks",
-    description: "No overwhelming to-do lists. One task. One day. All connected to your larger mission. Our system helps you identify what truly moves the needle and execute with clarity.",
-    icon: Target,
+    title: "Proactive Intervention",
+    description: "Like a credit monitoring service, we alert you when your score drops. Our advisors reach out with real-world support and adjustments to your workload—you don't need to ask for help.",
+    icon: Shield,
   },
   {
     number: "03",
-    title: "Gamified Progress",
-    description: "Track streaks, earn achievements, and celebrate wins with your squad. Our gamification system transforms accountability from a chore into an engaging journey of continuous growth.",
-    icon: Trophy,
+    title: "Squad-Based Accountability",
+    description: "Join squads of builders working toward shared missions. Each member commits to one focused daily task, creating rhythm and progress while coaches facilitate healthy execution.",
+    icon: Users,
+  },
+  {
+    number: "04",
+    title: "Team Health Dashboard",
+    description: "Leading a team? Monitor the collective health of your builders. See aggregate burnout scores, identify at-risk members early, and foster a sustainable high-performance culture.",
+    icon: BarChart3,
   },
 ];
 
