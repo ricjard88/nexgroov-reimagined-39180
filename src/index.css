@@ -95,6 +95,10 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     min-height: 100vh;
   }
+
+  section[id] {
+    scroll-margin-top: 100px;
+  }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-light tracking-wide;

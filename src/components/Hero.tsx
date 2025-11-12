@@ -5,7 +5,7 @@ import { ObstacleDropdown } from "./ObstacleDropdown";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 md:px-12">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 md:px-12 pt-24 md:pt-32">
       <div className="absolute inset-0 overflow-hidden">
         <AnimatedLines />
       </div>
