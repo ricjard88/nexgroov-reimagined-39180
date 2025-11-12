@@ -54,11 +54,31 @@ All colors MUST be HSL.
 
 @layer utilities {
   .letter-spacing-wide {
-    letter-spacing: 0.5em;
+    letter-spacing: 0.05em;
   }
   
   .letter-spacing-wider {
-    letter-spacing: 0.8em;
+    letter-spacing: 0.1em;
+  }
+
+  @media (min-width: 768px) {
+    .letter-spacing-wide {
+      letter-spacing: 0.3em;
+    }
+    
+    .letter-spacing-wider {
+      letter-spacing: 0.5em;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .letter-spacing-wide {
+      letter-spacing: 0.5em;
+    }
+    
+    .letter-spacing-wider {
+      letter-spacing: 0.8em;
+    }
   }
 
   .gradient-text {
