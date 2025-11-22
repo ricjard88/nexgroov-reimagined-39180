@@ -144,13 +144,10 @@ export const BurnoutAssessment = () => {
   return (
     <section id="burnout-quiz" className="py-32 px-6 md:px-12 bg-gradient-subtle">
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-12 space-y-4">
+        <div className="text-center mb-12">
           <h2 className="text-4xl md:text-6xl font-light" style={{ color: "hsl(var(--quiz-headline))" }}>
             How close are you to burnout right now?
           </h2>
-          <p className="text-base md:text-lg" style={{ color: "hsl(var(--quiz-subheadline))" }}>
-            60-second anonymous check · Metadata-only product · No content ever read
-          </p>
         </div>
 
         <div className="space-y-12">
