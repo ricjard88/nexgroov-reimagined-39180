@@ -16,6 +16,9 @@ export const Header = () => {
           <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
             Features
           </a>
+          <a href="#burnout-quiz" className="text-muted-foreground hover:text-foreground transition-colors">
+            Quiz
+          </a>
           <a href="#team" className="text-muted-foreground hover:text-foreground transition-colors">
             Team
           </a>
