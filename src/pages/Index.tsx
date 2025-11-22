@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Thesis } from "@/components/Thesis";
 import { Features } from "@/components/Features";
+import { BurnoutAssessment } from "@/components/BurnoutAssessment";
 import { BurnoutScoreExplainer } from "@/components/BurnoutScoreExplainer";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
@@ -14,6 +15,7 @@ const Index = () => {
         <Hero />
         <Thesis />
         <Features />
+        <BurnoutAssessment />
         <BurnoutScoreExplainer />
         <CTA />
       </main>
