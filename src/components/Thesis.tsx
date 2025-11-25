@@ -8,7 +8,7 @@ export const Thesis = () => {
         
         <div className="space-y-8 text-lg md:text-xl text-muted-foreground leading-relaxed">
           <p className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Founders, builders, and high-stress leaders push until they break. Burnout doesn't announce itself. It accumulates silently through missed sleep, skipped meals, and endless grinding. By the time you realize you're burned out, you've already lost months of productivity and well-being.
+            Burnout doesn't announce itself. It accumulates silently through missed sleep, skipped meals, and endless grinding. By the time you realize you're burned out, you've already lost months of productivity and well-being.
           </p>
           
           <p className="animate-fade-in" style={{ animationDelay: "0.2s" }}>

@@ -7,10 +7,10 @@ import { Progress } from "@/components/ui/progress";
 import { toast } from "@/hooks/use-toast";
 
 const questions = [
-  "I feel emotionally drained from my work.",
+  "I have little energy left for life outside work.",
   "I feel detached or cynical about my work/users/customers.",
   "I've been working 60+ hours/week lately.",
-  "I have little energy left for life outside work.",
+  "I feel emotionally drained from my work.",
   "I have little or no peer/founder support to talk about the hard parts.",
   "I feel like I'm achieving less than I should.",
 ];
