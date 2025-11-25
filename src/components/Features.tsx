@@ -2,7 +2,7 @@ import { Activity, Shield, Users, BarChart3 } from "lucide-react";
 
 const features = [
   {
-    number: "01",
+    number: "04",
     title: "Burnout Health Monitoring",
     description: "Track your burnout score in real-time through daily check-ins, task completion patterns, and engagement levels. We identify when you're approaching your threshold before you feel it.",
     icon: Activity,
@@ -20,7 +20,7 @@ const features = [
     icon: Users,
   },
   {
-    number: "04",
+    number: "01",
     title: "Team Health Dashboard",
     description: "Leading a team? Monitor the collective health of your builders. See aggregate burnout scores, identify at-risk members early, and foster a sustainable high-performance culture.",
     icon: BarChart3,
