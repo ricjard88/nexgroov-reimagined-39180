@@ -4,7 +4,7 @@ interface BurnoutScoreGaugeProps {
   score?: number;
 }
 
-export const BurnoutScoreGauge = ({ score = 72 }: BurnoutScoreGaugeProps) => {
+export const BurnoutScoreGauge = ({ score = 30 }: BurnoutScoreGaugeProps) => {
   const [animatedScore, setAnimatedScore] = useState(0);
 
   useEffect(() => {
@@ -70,16 +70,20 @@ export const BurnoutScoreGauge = ({ score = 72 }: BurnoutScoreGaugeProps) => {
 
       <div className="grid grid-cols-1 gap-3 w-full max-w-xs text-sm">
         <div className="flex justify-between items-center">
-          <span className="text-muted-foreground">Daily Check-ins</span>
-          <span className="text-foreground font-medium">5/7 this week</span>
+          <span className="text-muted-foreground">Check-Ins</span>
+          <span className="text-foreground font-medium">2/7</span>
         </div>
         <div className="flex justify-between items-center">
           <span className="text-muted-foreground">Task Completion</span>
-          <span className="text-foreground font-medium">85%</span>
+          <span className="text-foreground font-medium">22%</span>
         </div>
         <div className="flex justify-between items-center">
           <span className="text-muted-foreground">Team Engagement</span>
           <span className="text-primary font-medium">Active</span>
+        </div>
+        <div className="flex justify-between items-center">
+          <span className="text-muted-foreground">Health Crisis</span>
+          <span className="text-destructive font-medium">Danger Zone</span>
         </div>
       </div>
     </div>
