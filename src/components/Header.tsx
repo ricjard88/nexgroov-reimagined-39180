@@ -10,16 +10,16 @@ export const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
             About
           </a>
-          <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#features" className="text-muted-foreground hover:text-primary transition-colors">
             Features
           </a>
-          <a href="#burnout-quiz" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#burnout-quiz" className="text-muted-foreground hover:text-primary transition-colors">
             Quiz
           </a>
-          <a href="#team" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#team" className="text-muted-foreground hover:text-primary transition-colors">
             Team
           </a>
         </nav>
