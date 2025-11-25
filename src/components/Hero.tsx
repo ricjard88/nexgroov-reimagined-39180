@@ -19,7 +19,7 @@ export const Hero = () => {
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
-              We identify burnout before it happens.
+              If you're reading this, you're probably 2 out of the 3 Americans who are burnt out. We identify burnout before it happens. Let's make sure it doesn't happen again.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
