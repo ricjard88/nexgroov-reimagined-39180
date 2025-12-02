@@ -11,10 +11,10 @@ export const Header = () => {
         
         <div className="flex items-center gap-2">
           <Button variant="outline" size="sm" asChild>
-            <a href="#signin">Sign in</a>
+            <a href="/signin">Sign in</a>
           </Button>
           <Button size="sm" asChild>
-            <a href="#join">I'm in</a>
+            <a href="/signup">Sign up</a>
           </Button>
         </div>
       </div>
