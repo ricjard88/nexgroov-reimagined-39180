@@ -16,7 +16,7 @@ const features = [
   {
     number: "03",
     title: "Squad-Based Accountability",
-    description: "Join squads of builders working toward shared missions. Each member commits to one focused daily task, creating rhythm and progress while consiglieres facilitate healthy execution.",
+    description: "Join squads of builders working toward shared missions. Each member commits to one focused daily task, creating rhythm and progress while Consiglieres facilitate healthy execution.",
     icon: Users,
   },
   {

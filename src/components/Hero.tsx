@@ -8,7 +8,7 @@ export const Hero = () => {
         Sustainable momentum.
       </h1>
       <p className="text-muted-foreground text-lg mb-6">
-        Nexgroov helps high-performance people stay consistent without burning out. Small pods. Daily rhythm. Weekly progress.
+        Nexgroov helps High Performers stay consistent without burning out. Small pods. Daily rhythm. Weekly progress.
       </p>
       <div>
         <Button asChild>
