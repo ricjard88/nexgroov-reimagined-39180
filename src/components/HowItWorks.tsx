@@ -3,7 +3,7 @@ export const HowItWorks = () => {
     <section className="max-w-4xl mx-auto py-12 px-6">
       <h3 className="text-xl font-semibold mb-2">How pods work</h3>
       <p className="text-muted-foreground">
-        3 high performers and 1 coach. Competitive check-ins. Weekly rhythm. Zero fluff.
+        3 high performers and 1 consigliere. Competitive check-ins. Weekly rhythm. Zero fluff.
       </p>
     </section>
   );
