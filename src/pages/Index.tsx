@@ -1,27 +1,19 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { CohortAnnouncement } from "@/components/CohortAnnouncement";
-import { Thesis } from "@/components/Thesis";
-import { Features } from "@/components/Features";
-import { BurnoutAssessment } from "@/components/BurnoutAssessment";
-import { BurnoutScoreExplainer } from "@/components/BurnoutScoreExplainer";
-import { Testimonials } from "@/components/Testimonials";
-import { CTA } from "@/components/CTA";
+import { PodsSection } from "@/components/PodsSection";
+import { DefeatBurnoutGame } from "@/components/DefeatBurnoutGame";
+import { HowItWorks } from "@/components/HowItWorks";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background text-foreground">
       <Header />
       <main>
         <Hero />
-        <CohortAnnouncement />
-        <Thesis />
-        <Features />
-        <BurnoutAssessment />
-        <BurnoutScoreExplainer />
-        <Testimonials />
-        <CTA />
+        <PodsSection />
+        <DefeatBurnoutGame />
+        <HowItWorks />
       </main>
       <Footer />
     </div>
