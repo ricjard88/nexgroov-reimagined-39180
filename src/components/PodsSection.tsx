@@ -18,11 +18,11 @@ const PODS = [
 
 export const PodsSection = () => {
   return (
-    <section className="bg-muted py-16 px-6">
+    <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-4">
           {PODS.map((pod) => (
-            <Card key={pod.title} className="bg-background border-border">
+            <Card key={pod.title} className="border-border shadow-none">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold mb-2">{pod.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">{pod.desc}</p>
