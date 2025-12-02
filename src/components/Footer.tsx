@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <footer className="border-t border-border py-6 px-6 text-center text-muted-foreground text-sm">
-      © Don't Burn Out (DBO)
+      © nexgroov
     </footer>
   );
 };

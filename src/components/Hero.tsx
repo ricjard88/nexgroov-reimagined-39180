@@ -8,7 +8,7 @@ export const Hero = () => {
         Sustainable momentum.
       </h1>
       <p className="text-muted-foreground max-w-xl mb-6">
-        Don't Burn Out helps founders stay consistent without burning out. Competitive pods. Daily rhythm. Weekly progress.
+        Nexgroov helps high-performers stay consistent without burning out. Competitive pods. Daily rhythm. Weekly progress.
       </p>
       <div>
         <Button asChild>
