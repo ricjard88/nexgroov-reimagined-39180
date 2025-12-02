@@ -12,7 +12,7 @@ const PODS = [
   },
   { 
     title: 'Solo Specialists', 
-    desc: 'Designers, devs, coaches, and consultants who want steady output.' 
+    desc: 'Designers, devs, consiglieres, and consultants who want steady output.' 
   },
 ];
 
@@ -22,7 +22,7 @@ export const PodsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-4">
           {PODS.map((pod) => (
-            <Card key={pod.title} className="border-border shadow-none">
+            <Card key={pod.title} className="border-border shadow-none transition-all duration-300 hover:scale-[1.02] hover:shadow-md">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold mb-2">{pod.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">{pod.desc}</p>
