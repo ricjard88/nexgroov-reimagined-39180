@@ -62,7 +62,7 @@ export const DefeatBurnoutGame = () => {
 
   return (
     <div className="max-w-3xl mx-auto my-12 px-6">
-      <h3 className="font-serif text-2xl text-center mb-2">Defeat the Burnout</h3>
+      <h3 className="font-serif text-2xl text-center mb-2">Stay in the Groove</h3>
       <div className="flex justify-center gap-3 mb-2">
         <div className="text-xs text-muted-foreground">score: {score}</div>
         <div className="text-xs text-muted-foreground">streak: {streak}</div>
@@ -80,7 +80,7 @@ export const DefeatBurnoutGame = () => {
         {alive && (
           <button
             onClick={hit}
-            aria-label="defeat burnout"
+            aria-label="stay in the groove"
             className="absolute -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-destructive border-2 border-destructive/80 cursor-pointer hover:scale-110 transition-transform"
             style={{
               left: pos.left,
@@ -95,7 +95,7 @@ export const DefeatBurnoutGame = () => {
       </div>
 
       <p className="text-center text-xs text-muted-foreground mt-2">
-        Tap the red dot quickly. It speeds up each round. Keep streaks to grow energy.
+        Tap the red dot quickly. It speeds up each round. Keep streaks to maintain momentum.
       </p>
     </div>
   );
