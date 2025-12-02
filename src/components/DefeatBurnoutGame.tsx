@@ -19,7 +19,7 @@ export const DefeatBurnoutGame = () => {
     moveRandom();
     setAlive(true);
     setMsg('');
-    setSpeed((s) => Math.max(450, s - 60));
+    setSpeed((s) => Math.max(300, s - 80));
   }
 
   function hit() {

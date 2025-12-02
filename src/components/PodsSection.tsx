@@ -27,7 +27,7 @@ export const PodsSection = () => {
                 <h3 className="text-lg font-semibold mb-2">{pod.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">{pod.desc}</p>
                 <Button variant="outline" size="sm" className="w-full">
-                  Join waitlist
+                  Get started
                 </Button>
               </CardContent>
             </Card>
