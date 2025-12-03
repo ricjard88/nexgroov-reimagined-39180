@@ -12,7 +12,7 @@ const PODS = [
   },
   { 
     title: 'Solo Specialists', 
-    desc: 'Designers, devs, Consiglieres, and consultants who want steady output.' 
+    desc: 'Designers, devs, and experts who want steady, reliable output.' 
   },
 ];
 
