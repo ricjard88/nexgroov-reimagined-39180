@@ -6,7 +6,7 @@ const About = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <main className="max-w-3xl mx-auto px-6 py-20">
-        <h1 className="font-serif text-4xl md:text-5xl font-normal mb-16">About</h1>
+        <h1 className="font-serif text-4xl md:text-5xl font-normal mb-16">About Us</h1>
         
         <div className="font-serif space-y-6 text-muted-foreground leading-relaxed">
           <p>What we build here isn't for everyone. And that is by design.</p>
