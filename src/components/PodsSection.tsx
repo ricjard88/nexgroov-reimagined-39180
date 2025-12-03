@@ -24,9 +24,9 @@ export const PodsSection = () => {
           {PODS.map((pod) => (
             <Card key={pod.title} className="border-border shadow-none transition-all duration-300 hover:scale-[1.02] hover:shadow-md">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-2">{pod.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{pod.desc}</p>
-                <Button variant="outline" size="sm" className="w-full" asChild>
+                <h3 className="font-serif text-lg font-semibold mb-2">{pod.title}</h3>
+                <p className="font-serif text-muted-foreground text-sm mb-4">{pod.desc}</p>
+                <Button variant="outline" size="sm" className="w-full font-serif" asChild>
                   <a href="/signup">Get started</a>
                 </Button>
               </CardContent>
