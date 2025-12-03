@@ -7,13 +7,20 @@ export const Header = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains('dark');
+    const savedMode = localStorage.getItem('darkMode');
+    const isDarkMode = savedMode === 'true';
     setIsDark(isDarkMode);
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, []);
 
   const toggleDarkMode = () => {
     const newMode = !isDark;
     setIsDark(newMode);
+    localStorage.setItem('darkMode', newMode ? 'true' : 'false');
     if (newMode) {
       document.documentElement.classList.add('dark');
     } else {
