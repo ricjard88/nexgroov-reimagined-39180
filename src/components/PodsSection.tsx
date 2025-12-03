@@ -4,11 +4,11 @@ import { Card, CardContent } from "@/components/ui/card";
 const PODS = [
   { 
     title: 'Early Founders', 
-    desc: 'People finding traction and testing product-market fit.' 
+    desc: 'Finding traction and testing product-market fit.' 
   },
   { 
     title: 'Founder Operators', 
-    desc: 'Founders running product and ops with ownership.' 
+    desc: 'Running product and ops with ownership.' 
   },
   { 
     title: 'Solo Specialists', 
