@@ -3,8 +3,9 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+
+const SUPABASE_URL = "https://aybfhcfuohelichpqayl.supabase.co";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -27,11 +28,17 @@ const SignUp = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke("send-interest-email", {
-        body: { email: email.trim() },
+      const response = await fetch(`${SUPABASE_URL}/functions/v1/send-interest-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: email.trim() }),
       });
 
-      if (error) throw error;
+      if (!response.ok) {
+        throw new Error('Failed to submit');
+      }
 
       setIsSubmitted(true);
       toast({
