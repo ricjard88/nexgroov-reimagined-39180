@@ -25,9 +25,12 @@ const About = () => {
           
           <p>Just clear signals, honest tracking, and the pressure of showing up with people who expect something of you.</p>
           
-          <p>If you want noise, there are other places for that. If you're looking for feel-good stories and rainbow charts, there are plenty of OTHER options.</p>
+          <p>If you want noise, there are other places for that.</p>
+          <p>If you're looking for feel-good stories and rainbow charts, there are plenty of OTHER options.</p>
           
-          <p>But if you want to grow capacity, for real… If you want to train the way serious builders train… If you want an environment that keeps you honest and sharp…</p>
+          <p>But if you want to grow capacity, for real…</p>
+          <p>If you want to train the way serious builders train…</p>
+          <p>If you want an environment that keeps you honest and sharp…</p>
           
           <p>If you refuse to become another burnout statistic, you're in the right place.</p>
           
