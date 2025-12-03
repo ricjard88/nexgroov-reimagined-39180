@@ -33,7 +33,7 @@ const About = () => {
           
           <p className="mt-8">We built Nexgroov for builders who want to operate at a high standard without burning themselves down. For teams who want an arena to push each other. For groups who want to win clean, not collapse messy.</p>
           
-          <p>To be clear: We're obsessed with one outcome: turning high-performers into unstoppable ones without burning them out. Our world deserves it.</p>
+          <p className="italic">We're obsessed with one outcome: turning high-performers into unstoppable ones without burning them out. Our world deserves it.</p>
           
           <p className="mt-8">If this sounds like you…</p>
           
