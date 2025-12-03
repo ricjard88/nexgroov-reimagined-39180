@@ -2,80 +2,103 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const SignUp = () => {
-  const [step, setStep] = useState<1 | 2>(1);
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const { toast } = useToast();
 
-  const handleNext = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStep(2);
-  };
+    
+    if (!email.trim()) {
+      toast({
+        title: "Email required",
+        description: "Please enter your email address.",
+        variant: "destructive",
+      });
+      return;
+    }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would handle the email submission
-    console.log("Email submitted:", email);
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase.functions.invoke("send-interest-email", {
+        body: { email: email.trim() },
+      });
+
+      if (error) throw error;
+
+      setIsSubmitted(true);
+      toast({
+        title: "Request received!",
+        description: "We'll reach out when a spot opens up.",
+      });
+    } catch (error) {
+      console.error("Error submitting interest:", error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or email us directly at hello@nexgroov.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <Header />
       <main className="flex-1 flex items-center justify-center px-6 py-12">
-        <div className="w-full max-w-md">
-          <h1 className="font-serif text-3xl text-center mb-8">
-            {step === 1 ? "Create your account" : "Almost there!"}
-          </h1>
-          
-          {step === 1 ? (
-            <form onSubmit={handleNext} className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Full Name</Label>
-                <Input id="name" type="text" placeholder="John Doe" required />
+        <div className="w-full max-w-md text-center">
+          {isSubmitted ? (
+            <div className="space-y-4">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
               </div>
-              <div className="space-y-2">
-                <Label htmlFor="password">Password</Label>
-                <Input id="password" type="password" placeholder="••••••••" required />
-              </div>
-              <Button className="w-full" type="submit">
-                Next
-              </Button>
-            </form>
+              <h1 className="font-serif text-3xl">You're on the list!</h1>
+              <p className="text-muted-foreground">
+                We'll reach out to <span className="text-foreground font-medium">{email}</span> when a spot opens up.
+              </p>
+              <a href="/" className="text-primary hover:underline text-sm">
+                ← Back to home
+              </a>
+            </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+            <>
+              <h1 className="font-serif text-3xl mb-4">We're currently invite-only</h1>
+              <p className="text-muted-foreground mb-8">
+                Interested in joining? Drop your email below and we'll reach out when a spot opens up.
+              </p>
+              
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <Input 
-                  id="email" 
                   type="email" 
                   placeholder="you@example.com" 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required 
+                  className="text-center"
                 />
-              </div>
-              <Button className="w-full" type="submit">
-                Get started
-              </Button>
-              <Button 
-                className="w-full" 
-                variant="outline" 
-                type="button"
-                onClick={() => setStep(1)}
-              >
-                Back
-              </Button>
-            </form>
+                <Button className="w-full" type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? "Submitting..." : "Request Access"}
+                </Button>
+              </form>
+              
+              <p className="text-sm text-muted-foreground mt-6">
+                Or email us directly at{" "}
+                <a href="mailto:hello@nexgroov.com" className="text-foreground hover:underline">
+                  hello@nexgroov.com
+                </a>
+              </p>
+            </>
           )}
-          
-          <p className="text-center text-sm text-muted-foreground mt-6">
-            Already have an account?{" "}
-            <a href="/signin" className="text-foreground hover:underline">
-              Sign in
-            </a>
-          </p>
         </div>
       </main>
       <Footer />
