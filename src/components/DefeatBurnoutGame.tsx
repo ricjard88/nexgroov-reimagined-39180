@@ -61,7 +61,7 @@ export const DefeatBurnoutGame = () => {
   }, []);
 
   return (
-    <div className="max-w-3xl mx-auto my-12 px-6">
+    <div className="max-w-3xl mx-auto mt-4 mb-12 px-6">
       <h3 className="font-serif text-2xl text-center mb-2">Stay in the Groove</h3>
       <div className="flex justify-center gap-3 mb-2">
         <div className="text-xs text-muted-foreground">score: {score}</div>

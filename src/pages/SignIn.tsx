@@ -25,9 +25,9 @@ const SignIn = () => {
             </Button>
           </form>
           <p className="text-center text-sm text-muted-foreground mt-6">
-            Don't have an account?{" "}
+            Don't have access yet?{" "}
             <a href="/signup" className="text-foreground hover:underline">
-              Sign up
+              Request access
             </a>
           </p>
         </div>
