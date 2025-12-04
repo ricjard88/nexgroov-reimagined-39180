@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export const PodsSection = () => {
   return (
-    <section className="py-16 px-6">
+    <section className="py-8 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-xl mx-auto">
           <Card className="border-border shadow-none transition-all duration-300 hover:scale-[1.02] hover:shadow-md">
