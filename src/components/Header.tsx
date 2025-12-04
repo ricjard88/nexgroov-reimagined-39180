@@ -48,7 +48,7 @@ export const Header = () => {
             <a href="/signin">Sign in</a>
           </Button>
           <Button size="sm" asChild>
-            <a href="/signup">Sign up</a>
+            <a href="/signup">Request Access</a>
           </Button>
         </div>
       </div>
