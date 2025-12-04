@@ -7,7 +7,7 @@ export const Hero = () => {
         The system to experience your greatness.
       </h1>
       <p className="text-muted-foreground text-lg mb-6">
-        Nexgroov provides the Exceptional Operating System for High Performers. Small pods. Sustainable rhythm. Consistent progress.
+        Nexgroov provides this Exceptional Operating System. Small pods. Sustainable rhythm. Consistent progress.
       </p>
       <div>
         <Button asChild>
