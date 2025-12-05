@@ -7,7 +7,7 @@ export const Hero = () => {
         Accountability that sharpens your truest self <span className="italic text-primary">without the stress</span>.
       </h1>
       <p className="text-muted-foreground text-lg mb-6">
-        Nexgroov is an Exceptional Operating System for growth and advancement. Small pods. Sustainable rhythm. Consistent progress.
+        Nexgroov is an Exceptional Operating System for growth and advancement. Small pods. Capacity based rhythm. Consistent progress.
       </p>
       <div>
         <Button asChild>
