@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section className="max-w-4xl mx-auto pt-12 pb-6 px-6 font-serif">
       <h1 className="text-5xl leading-tight mb-4">
-        The system to experience your greatness.
+        The method to experience accountability for your truest self.
       </h1>
       <p className="text-muted-foreground text-lg mb-6">
         Nexgroov provides this Exceptional Operating System. Small pods. Sustainable rhythm. Consistent progress.
